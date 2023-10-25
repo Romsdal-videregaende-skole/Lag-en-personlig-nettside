@@ -17,12 +17,12 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Validate HTML
-      run: |
+      run:
         curl -s -F "uploaded_file=@./index.html;type=text/html" https://validator.w3.org/nu/ > resultat.txt
         grep -q "No errors or warnings to show" resultat.txt || exit 1
       
     - name: Validate CSS
-      run: |
+      run:
         curl -s -F "file=@./style.css;type=text/css" https://jigsaw.w3.org/css-validator/validator.html > resultat.txt
         grep -q "Congratulations! No Error Found." resultat.txt || exit 1
 
