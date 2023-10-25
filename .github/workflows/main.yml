@@ -16,19 +16,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '14'
-        
-    - name: Install dependencies
-      run: npm install
-      
     - name: Validate HTML
-      run: npm run validate-html
+      run: |
+        curl -s -F "uploaded_file=@./path/to/your/index.html;type=text/html" https://validator.w3.org/nu/ > results.html
+        grep -q "The document validates" results.html || exit 1
       
     - name: Validate CSS
-      run: npm run validate-css
-
-    - name: Format code with Prettier
-      run: npm run format
+      run: |
+        curl -s -F "file=@./path/to/your/styles.css;type=text/css" https://jigsaw.w3.org/css-validator/validator > results.css
+        grep -q "Congratulations! No Error Found." results.css || exit 1
