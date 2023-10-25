@@ -32,3 +32,4 @@ jobs:
 
     - name: Format code with Prettier
       run: npm run format
+
