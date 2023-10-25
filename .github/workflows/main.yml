@@ -27,4 +27,5 @@ jobs:
         grep -q "Congratulations! No Error Found." resultat.txt || exit 1
 
     - name: Show HTML validation results
-      run: cat resultat.txt
+      run: 
+        cat resultat.txt
