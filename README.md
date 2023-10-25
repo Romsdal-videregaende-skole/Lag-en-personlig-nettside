@@ -27,7 +27,7 @@ Målet med denne oppgaven er å lage en enkel, men elegant, personlig nettside. 
 2. Integrere en backend: Lag et kontaktskjema og lagre data på en backend-tjenste, f.eks. ved hjelp av Node.js og Express
 
 ## Tips
-Bruk klassenotatsblokka som ligger i Teams -> Utvikling. Der har du litt tips og triks for å repetere på det som trengs for å løse oppgaven. Bruk også hjelpemiddel som (https://validator.w3.org/)[https://validator.w3.org/] og (Prettier)[https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode]. 
+Bruk klassenotatsblokka som ligger i Teams -> Utvikling. Der har du litt tips og triks for å repetere på det som trengs for å løse oppgaven. Bruk også hjelpemiddel som https://validator.w3.org/ og [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode). 
 
 ## Oppgavestruktur
 
