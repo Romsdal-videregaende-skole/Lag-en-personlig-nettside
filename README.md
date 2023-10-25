@@ -33,7 +33,3 @@ Målet med denne oppgaven er å lage en enkel, men elegant, personlig nettside. 
 ## Tips
 
 Bruk klassenotatsblokka som ligger i Teams -> Utvikling. Der har du litt tips og triks for å repetere på det som trengs for å løse oppgaven. Bruk også hjelpemiddel som https://validator.w3.org/ og [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
-
-## Oppgavestruktur
-
-Det er lagt inn automatiske tester. Når du leverer inn oppgaven vil testene kjøre for å sjekke om du har gjort alle obligatoriske kravene. Lykke til! 😄
