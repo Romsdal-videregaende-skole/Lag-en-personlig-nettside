@@ -19,9 +19,9 @@ jobs:
     - name: Validate HTML
       run: |
         curl -s -F "uploaded_file=@./index.html;type=text/html" https://validator.w3.org/nu/ > resultat.txt
-        grep -q "Woop woop! Det var ingen problem med HTML-en din!" resultat.txt || exit 1
+        grep -q "No errors or warnings to show" resultat.txt || exit 1
       
     - name: Validate CSS
       run: |
-        curl -s -F "file=@./style.css;type=text/css" https://jigsaw.w3.org/css-validator/validator > resultat.txt
-        grep -q "Gratulere! Ingen error i CSS-en din!" resultat.txt || exit 1
+        curl -s -F "file=@./style.css;type=text/css" https://jigsaw.w3.org/css-validator/validator.html > resultat.txt
+        grep -q "Congratulations! No Error Found." resultat.txt || exit 1
