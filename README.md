@@ -31,4 +31,4 @@ Bruk klassenotatsblokka som ligger i Teams -> Utvikling. Der har du litt tips og
 
 ## Oppgavestruktur
 
-Det er lagt inn automatiske tester. Når du leverer inn oppgaven vil disse kjøres for å sjekke om du har gjort de obligatoriske kravene. Lykke til! 😄
+Det er lagt inn automatiske tester. Når du leverer inn oppgaven vil testene kjøre for å sjekke om du har gjort alle obligatoriske kravene. Lykke til! 😄
