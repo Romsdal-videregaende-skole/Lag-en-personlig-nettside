@@ -25,3 +25,6 @@ jobs:
       run: |
         curl -s -F "file=@./style.css;type=text/css" https://jigsaw.w3.org/css-validator/validator.html > resultat.txt
         grep -q "Congratulations! No Error Found." resultat.txt || exit 1
+
+    - name: Show HTML validation results
+      run: cat resultat.txt
